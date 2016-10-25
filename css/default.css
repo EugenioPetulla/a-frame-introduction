@@ -69,6 +69,14 @@ body {
   color: #C13832;
 }
 
+.reveal .round {
+  border-radius: 50%;
+}
+
+.reveal .transparent {
+  opacity: 0.8;
+}
+
 .reveal img.alignright {
 	float: right;
 	margin-left: 20px;
@@ -88,6 +96,30 @@ body {
 
 .reveal #slide-me img {
 	border-radius: 50%;
+}
+
+.reveal .image-row {
+  align-items: center;
+  display: flex;
+}
+
+.reveal .image-row div {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+}
+
+.reveal .captioned-image-row {
+  display: flex;
+}
+
+.reveal .captioned-image-row div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*********************************************
