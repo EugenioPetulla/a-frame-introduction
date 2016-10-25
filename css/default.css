@@ -122,6 +122,10 @@ body {
   justify-content: space-between;
 }
 
+.reveal .captioned-image-row div img {
+  transform: scale(0.8);
+}
+
 /*********************************************
  * HEADERS
  *********************************************/
