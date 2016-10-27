@@ -76,58 +76,109 @@
                 <section data-background-image="images/metaverse.png">
                 	<h1>Metaverse</h1>
                 </section>
+                <section>
+                	<h1>Too hard to create WebVR experiences!</h1>
+                </section>
+                <section data-background-video="video/boilerplate.mp4"">
+                	<div class="slide__boilerplate">
+						<p>Import WebVR polyfill</p>
+						<p>Set up camera</p>
+						<p>Set up lights</p>
+						<p>Initialize scene</p>
+						<p>Declare and pass canvas</p>
+						<p>Listen to window resize</p>
+						<p>Install VREffect</p>
+						<p>Instantiate renderer</p>
+						<p>Create render loop</p>
+						<p>Preload assets</p>
+						<p>Figure out responsiveness</p>
+						<p>Deal with metatags and mobile</p>
+					</div>
+                </section>
+                <section>
+                	<h1>Setup a scene with a-frame</h1>
+                    <pre><code class="hljs html">
+<a-scene></a-scene>
+                    </code></pre>
+                </section>
+                <section>
+                	<h1>Setup a box with three.js</h1>
+                    <pre><code class="hljs javascript">
+// Box in three.js
+var geometry = new THREE.BoxGeometry(1, 2, 3);
+var material = new THREE.MeshStandardMaterial({color: 'red'});
+var box = new THREE.Mesh(geometry, material);
+box.position.set(10, 0, 10);
+scene.add(box);
+                    </code></pre>
+                </section>
+                <section>
+                	<h1>Setup the same box with a-frame</h1>
+                    <pre><code class="hljs html">
+<a-scene>
+  <a-box color="red" position="10 0 10"></a-box>
+</a-scene>
+                    </code></pre>
+                </section>
             </section>
             <section id="slide-4">
-                
+	            <section data-background-image="images/aframe-rendered-full.png">
+	                <h1>A-Frame</h1>
+	                <h3>A declarative framework for building virtual reality experiences on the Web</h3>
+	            </section>
+	            <section>
+	            <h1>Hello World</h1>
+	            	<pre class="small"><code class="hljs html">
+<a-scene>
+  <a-box color="#4CC3D9" position="-1 0.5 -3" rotation="0 45 0"></a-box>
+  <a-cylinder color="#FFC65D" position="1 0.75 -3" radius="0.5" height="1.5"></a-cylinder>
+  <a-sphere color="#EF2D5E" position="0 1.25 -5" radius="1.25"></a-sphere>
+  <a-plane color="#7BC8A4" position="0 0 -4" rotation="-90 0 0" width="4" height="4"></a-plane>
+  <a-sky color="#ECECEC"></a-sky>
+</a-scene>
+	            	</code></pre>
+	            </section>
+	            <section data-background-image="images/hello-world.png">
+	            	<h1>Demo here:</h1>
+	            	<h3>aframe.io/examples/showcase/helloworld/</h3>
+	            </section>
+	            <section>
+	            	<h1>MagicaVoxel</h1>
+	            	<img src="images/magicavoxel.png">
+	            	<p><a href="http:voxel.codeplex.com">voxel.codeplex.com</a></p>
+	            </section>
+	            <section>
+	            	<h1>A-Frame Elements</h1>
+	            	<pre><code class="hljs html">
+<a-animation></a-animation>
+<a-box></a-box>
+<a-camera></a-camera>
+<a-circle></a-circle>
+<a-collada-model></a-collada-model>
+<a-cone></a-cone>
+<a-cursor></a-cursor>
+<a-curvedimage></a-curvedimage>
+<a-cylinder></a-cylinder>
+<a-dodecahedron></a-dodecahedron>
+<a-isocahedron></a-isocahedron>
+<a-image></a-image>
+<a-light></a-light>
+<a-obj-model></a-obj-model>
+<a-plane></a-plane>
+<a-ring></a-ring>
+<a-tetrahedron></a-tetrahedron>
+<a-torus></a-torus>
+<a-torus-knot></a-torus-knot>
+<a-sky></a-sky>
+<a-sound></a-sound>
+<a-sphere></a-sphere>
+<a-videosphere></a-videosphere>
+	            	</code></pre>
+	            </section>
+	            <section data-background-video="video/aframe-examples.mp4">
+	            	<h1>Build everithing</h1>
+	            </section>
             </section>
-            <section id="slide-5" data-background-image="images/alternative-bg.png">
-                <h1>Full Screen Image</h1>
-            </section>
-            <section id="slide-6" data-background-video="videos/Meet_Encryption.webm">
-                <h1>Full Screen Video</h1>
-            </section>
-            <section id="slide-7">
-                <section>
-                    <h1>CSS Code</h1>
-                    <pre><code class="hljs css">
-                    .my-class {
-                        text-align: center;
-                    }
-
-                    #my-id {
-                        font-size: 1.5em;
-                    }
-                    </code></pre>
-                </section>
-                <section>
-                    <h1>HTML Code</h1>
-                    <pre><code class="hljs html">
-            <div class="my-class">
-                <h1>Title</h1>
-                <h2>Subtitle</h2>
-                <p>Text paragraph</p>
-                <ul id="my-id">
-                    <li>Element One</li>
-                    <li>Element Two</li>
-                    <li>Element Three</li>
-                </ul>
-            </div>
-                    </code></pre>
-                </section>
-                <section>
-                    <h1>Rust Code</h1>
-                    <pre><code class="hljs rust">
-        fn main() {
-            // The statements here will
-            // be executed when the compiled
-            //binary is called
-
-            // Print text to the console
-            println!("Hello World!");
-        }
-                    </code></pre>
-                </section>
-        </section>
         </div>
     </div>
     <script type="text/javascript" src="js/reveal.js"></script>
